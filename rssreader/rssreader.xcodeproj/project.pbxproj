@@ -13,6 +13,7 @@
 		D7B053211EE72277006377B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7B0531F1EE72277006377B2 /* LaunchScreen.storyboard */; };
 		D7B0532C1EE736F7006377B2 /* RSSFeedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B0532A1EE736F7006377B2 /* RSSFeedVC.m */; };
 		D7B0532D1EE736F7006377B2 /* RSSFeedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7B0532B1EE736F7006377B2 /* RSSFeedVC.xib */; };
+		D7B053321EE74A1F006377B2 /* RSSFeedFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B053311EE74A1F006377B2 /* RSSFeedFetcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		D7B053291EE736F7006377B2 /* RSSFeedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSFeedVC.h; sourceTree = "<group>"; };
 		D7B0532A1EE736F7006377B2 /* RSSFeedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSFeedVC.m; sourceTree = "<group>"; };
 		D7B0532B1EE736F7006377B2 /* RSSFeedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSSFeedVC.xib; sourceTree = "<group>"; };
+		D7B053301EE74A1F006377B2 /* RSSFeedFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSFeedFetcher.h; sourceTree = "<group>"; };
+		D7B053311EE74A1F006377B2 /* RSSFeedFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSFeedFetcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		D7B053101EE72277006377B2 /* rssreader */ = {
 			isa = PBXGroup;
 			children = (
+				D7B0532E1EE74A03006377B2 /* Entities */,
+				D7B0532F1EE74A03006377B2 /* Services */,
 				D7B053281EE736E5006377B2 /* Presentation */,
 				D7B053141EE72277006377B2 /* AppDelegate.h */,
 				D7B053151EE72277006377B2 /* AppDelegate.m */,
@@ -85,6 +90,22 @@
 				D7B0532B1EE736F7006377B2 /* RSSFeedVC.xib */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D7B0532E1EE74A03006377B2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		D7B0532F1EE74A03006377B2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D7B053301EE74A1F006377B2 /* RSSFeedFetcher.h */,
+				D7B053311EE74A1F006377B2 /* RSSFeedFetcher.m */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7B053321EE74A1F006377B2 /* RSSFeedFetcher.m in Sources */,
 				D7B053161EE72277006377B2 /* AppDelegate.m in Sources */,
 				D7B053131EE72277006377B2 /* main.m in Sources */,
 				D7B0532C1EE736F7006377B2 /* RSSFeedVC.m in Sources */,
@@ -311,6 +333,7 @@
 				D7B053271EE72277006377B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
